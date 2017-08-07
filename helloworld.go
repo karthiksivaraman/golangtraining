@@ -1,11 +1,10 @@
 package main
 
-import (
-    "fmt"
-    "github.com/karthiksivaraman/golangTraining/utils"
-)
-// Function to print helloworld
+import "fmt"
+
 func main() {
-    fmt.Println("HEllo, World!!!")
-    fmt.Println(utils.Name)
+	var name string
+	fmt.Print("Enter your name:")
+	fmt.Scan(&name)
+	fmt.Printf("Your name is: %s", name)
 }
